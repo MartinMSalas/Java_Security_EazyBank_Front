@@ -1,7 +1,14 @@
+<style>
+  .logo img {
+    height: 80px;
+    width: auto;
+    max-width: 100%;
+  }
+</style>
 <div data-navigation="container" class="i-top-header">
   <div class="wrapper top-section">
     <div class="hleft"><a class="logo selfLogo" [routerLink]="user.authStatus!='AUTH' ? ['/home'] : ['/dashboard']"><img alt="logo"
-          src="../assets/images/logo.png"></a>
+          src="../assets/images/black_on_white.png" ></a>
     </div>
     <div class="mnav_hb hide">
       <div class="hamburger"><span class="line"></span><span class="line"></span><span class="line"></span></div>

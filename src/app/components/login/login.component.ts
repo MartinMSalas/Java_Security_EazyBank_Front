@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
       responseData => {        
         //get JWT token after login and set into session storage
         window.sessionStorage.setItem('Authorization',responseData.headers.get('Authorization')!);
-
+        
         this.model = <any> responseData.body;
         this.model.authStatus = 'AUTH';
         
